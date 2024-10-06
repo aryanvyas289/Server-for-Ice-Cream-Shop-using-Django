@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %} Home {% endblock title %}
+
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="{% static 'icecreams.jpg' %}" class="card-img-top fixed-image" alt="icecreams.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Ice Cream</h5>
+                    <p class="card-text">All Flavours of Ice Cream</p>
+                    <p class="card-text"><i>Prices Ranging from ₹70-180</i></p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="{% static 'smoothies.jpg' %}" class="card-img-top fixed-image" alt="smoothies.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Smoothies</h5>
+                    <p class="card-text">Very Refreshing Smoothies</p>
+                    <p class="card-text"><i>Prices Ranging from ₹150-250</i></p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="{% static 'falooda.jpg' %}" class="card-img-top fixed-image" alt="falooda.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Faloodas</h5>
+                    <p class="card-text">A Category of Special Mughlai Dessert</p>
+                    <p class="card-text"><i>Prices Ranging from ₹120-300</i></p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.fixed-image {
+    height: 300px;
+    object-fit: cover;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-body {
+    flex-grow: 1;
+}
+</style>
+
+{% endblock body %}
